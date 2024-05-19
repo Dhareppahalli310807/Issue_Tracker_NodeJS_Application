@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <h1>Projects</h1>
+    <ul>
+        <% projects.forEach(project => { %>
+            <li>
+                <a href="/projects/<%= project._id %>"><%= project.name %></a>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/projects/new">Create New Project</a>
+    <%- include('../partials/footer') %>
+</body>
+</html>

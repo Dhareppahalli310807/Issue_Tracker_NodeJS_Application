@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <h1>Create New Project</h1>
+    <form action="/projects" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" required></textarea>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required>
+        <button type="submit">Create</button>
+    </form>
+    <%- include('../partials/footer') %>
+</body>
+</html>
