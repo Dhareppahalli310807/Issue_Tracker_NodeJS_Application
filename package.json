@@ -13,6 +13,12 @@
   "author": "Dhareppa",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.4.0",
+    "npm": "^10.8.0"
   }
 }
